@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_second_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:inputType="text"
+            android:hint="@string/second_name"/>
+
+        <EditText
+            android:id="@+id/et_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:inputType="text"
+            android:hint="@string/first_name"/>
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:inputType="number"
+            android:hint="@string/age"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:onClick="add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:text="@string/add"/>
+
+        <Button
+            android:id="@+id/btn_view"
+            android:onClick="view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:text="@string/view"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:onClick="clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:text="@string/clear"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:onClick="search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:text="@string/search"/>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:onClick="edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:text="@string/edit"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:onClick="delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text"
+            android:text="@string/delete"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/margin"
+        android:padding="@dimen/padding"/>
+
+</LinearLayout>
